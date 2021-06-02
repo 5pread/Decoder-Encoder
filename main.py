@@ -14,4 +14,10 @@ def DecodeText():
     decoded_text = str(decoded_text)[2:][:-1]
     print(f'Your decoded text >> {decoded_text}')
 
-DecodeText()
+answ = input("""
+                E for encode, D for decoding\n""")
+
+if answ == "E":
+    EncodeText()
+else:
+    DecodeText()
